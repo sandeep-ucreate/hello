@@ -27,10 +27,6 @@ jobs:
         ROLLBAR_LEVEL: debug
         STRIPE_SECRET: jashg
       - image: postgres:9.6.2
-        environment:
-          POSTGRES_USER: ubuntu
-          POSTGRES_DB: postgres
-          POSTGRES_PASSWORD: postgres
     steps:
       - checkout
       - run:
